@@ -1,0 +1,144 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+
+.App {
+  text-align: center;
+  padding: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 640px;
+  width: 90%;
+  background: rgba(255,255,255,0.85);
+  border-radius: 14px;
+  box-shadow: 0 10px 40px rgba(16,24,40,0.12);
+  margin: 2rem auto;
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(15,23,42,0.04);
+}
+
+.login {
+  margin: 1rem auto 2rem auto;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.login input {
+  
+  padding: 0.6rem 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #e6e9f2;
+  border-radius: 8px;
+  min-width: 220px;
+  transition: box-shadow 160ms, border-color 160ms;
+}
+
+.login button {
+  padding: 0.55rem 0.9rem;
+  font-size: 1rem;
+  background: linear-gradient(90deg,#6366f1,#4f46e5);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(79,70,229,0.18);
+}
+
+.login button:hover {
+  transform: translateY(-1px);
+}
+
+.login input:focus {
+  outline: none;
+  border-color: #c7d2fe;
+  box-shadow: 0 6px 18px rgba(99,102,241,0.08);
+}
+
+.login button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.welcome-area h2 {
+  color: #222;
+  margin: 0.5rem 0;
+}
+
+.welcome-area {
+  margin-top: 1.5rem;
+}
+
+.welcome-area button {
+  padding: 0.45rem 0.75rem;
+  font-size: 0.95rem;
+  background: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.welcome-area button:hover {
+  background: #dc2626;
+}
+
+/* Welcome styles and fade-in */
+.welcome {
+  animation: fadeIn 420ms ease-in-out;
+}
+.welcome-title {
+  font-size: 1.6rem;
+  color: #0f172a;
+  margin: 0;
+}
+.welcome-sub {
+  margin: 0.25rem 0 0;
+  color: #475569;
+  font-size: 0.95rem;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
